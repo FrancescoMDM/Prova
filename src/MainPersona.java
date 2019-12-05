@@ -46,7 +46,7 @@ public class MainPersona {
                         }
                     }
                     break;
-
+                    //qwertyuiopasdfghjklzxcvbnm
             }
             }
             while (scelta != 4) ;
