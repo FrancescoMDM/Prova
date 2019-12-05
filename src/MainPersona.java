@@ -10,8 +10,10 @@ public class MainPersona {
         Scanner Tastiera = new Scanner(System.in);
         do {
             System.out.println("***********");
-            System.out.println("Vuoi inserire una persona?");
-            System.out.println("Vuoi stampare l'hashMap?");
+            System.out.println("1)Vuoi inserire una persona?");
+            System.out.println("2)Vuoi stampare l'hashMap?");
+            System.out.println("3)Vuoi cercare una persona?");
+            System.out.println("4)Esc");
             System.out.println("***********");
 
             scelta = Tastiera.nextInt();
@@ -35,8 +37,14 @@ public class MainPersona {
                     }
                 break;
                 case 3:
-
-
+                    System.out.println("Quale persona vuoi cercare?");
+                    int s= Tastiera.nextInt();
+                    for (Integer a  : people.keySet()) {
+                        if (a==s){
+                        System.out.println("Persona trovata:"+people.get(a).toString());
+                        break;
+                        }
+                    }
                     break;
 
             }
